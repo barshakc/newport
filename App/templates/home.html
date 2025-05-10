@@ -18,7 +18,7 @@
         <!-- Navbar Section -->
     <nav id="navbar" class="flex s-around bg-color">
         <div class="left-nav">
-            <h2 class="t-white">Portfolio</h2>
+            <h2 class="t-white">Barsha KC Khatri</h2>
         </div>
         <div class="right-nav">
             <ul class="flex">
@@ -35,14 +35,20 @@
     <section id="home" class="flex s-around sw-80 m-auto">
         <div class="home-left flex items-center">
             <div class="home-content">
-                <h6 class="poppinss">Hi, I'm</h6>
-                <h1 class="t-white">Barsha KC Khatri</h1>
-                <h4 class="poppinss">Electronics, Communication and Information Engineer</h4>
-                <a href="{% static 'pdf/cvbarsha.pdf' %}"  target="_blank">
-                    <button class="btn poppins">Resume</button></a>
-                    
-                <a class="btn live poppins" id="hireme" href=""
-                    target="_blank"></a>
+                <h6 class="poppinss">Hi !</h6>
+<h6 class="poppinss">I'm</h6>
+<h1 class="t-white">Barsha KC Khatri</h1>
+<h4 class="poppinss">Electronics, Communication and Information Engineer</h4>
+
+<div class="btn-group">
+    <a href="{% static 'pdf/cvbarsha.pdf' %}" target="_blank">
+        <button class="btn poppins">Resume</button>
+    </a>
+    <a class="btn live poppins" id="hireme" href="#contact" target="_blank">
+        Contact Me
+    </a>
+</div>
+
             </div>
         </div>
         <div class="home-right flex s-center items-center">
@@ -54,28 +60,32 @@
         </div>
     </section>
 
-          <!-- About Section -->
-    <section id="about">
-        <h1 class="t-center my-2 t-white f-2">About Me</h1>
-        <div class="about-container flex s-around ">
-            <div class=" about-left flex s-center items-center">
-                <!-- Here in src replade the given link with your secondary image link -->
-                <img src="{%static 'images/dog.png'%}" alt="" style="width: 60%;">
-            </div>
-
-            <div class="about-right flex">
-                <div class="about-content">
-                    <h1 class="t-white m-b-1 poppins">Avanish Patidar</h1>
-                    <p class="t-white poppins">My name is Avanish Patidar.I’m a B.tech student CDGI College in Computer Science & Engineering.
-                        
-                        
-                        I am fresher, I’m passionate about creating quality products that meet all of the customer’s needs, and I love learning new techniques and technologies that allow me to make that happen.While I generally enjoy all of my job, the part I find most draining is estimating projects for customers. I don’t mind doing it, but I enjoy actually creating the software much more.</p>
-                    <a class="btn " id="hireme"
-                        href="">Hire Me</a>
-                </div>
+ <!-- About Section -->
+<!-- About Section -->
+<section id="about">
+    <h1 class="t-center my-2 t-white f-2">About Me</h1>
+    <div class="about-container flex s-center">
+        <div class="about-left">
+            <!-- Text content and introduction -->
+            <div class="about-content">
+                <h2 class="t-white m-b-1 poppins">Hi, I'm Barsha KC Khatri</h2>
+                <p class="intro-text">
+                    A recent graduate in Electronics, Communication and Information Engineering, with a passion for technology-driven problem-solving.
+                </p>
+                <p class="about-text">
+                    I’ve had the opportunity to work on projects involving machine learning, real-time object detection, and backend development. My experience includes developing backend features using Python and Django, building RESTful APIs, and working with relational databases like SQL. 
+                </p>
+                <p class="about-text">
+                    I'm a curious and dedicated learner with a keen interest in building scalable and maintainable systems.
+                </p>
             </div>
         </div>
-    </section>
+    </div>
+    <div class="cta-container flex s-center">
+        <a class="btn" id="hireme" href="">Hire Me</a>
+    </div>
+</section>
+
 
     <!-- Skills Section -->
     <section id="skills">

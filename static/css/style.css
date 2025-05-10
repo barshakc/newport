@@ -183,7 +183,7 @@ body {
 
 /* Skills Section */
 #skills {
-    
+   
     padding: 4rem 2rem;
     text-align: center;
 }
@@ -235,13 +235,22 @@ body {
 
 
 /* Projects Section */
+#projects {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#projects h1 {
+    font-size: 3rem;
+    color: #d875ad;
+    margin-bottom: 2rem;
+}
 .projects-container {
     justify-content: center;
     align-items: center;
     margin: auto;
     flex-wrap: wrap;
 }
-
 
 
 
@@ -256,7 +265,7 @@ body {
 }
 
 .projects-item h1 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 1rem;
 }
 

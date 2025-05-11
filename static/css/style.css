@@ -245,6 +245,14 @@ body {
     color: #d875ad;
     margin-bottom: 2rem;
 }
+
+#projects h2 {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+
 .projects-container {
     justify-content: center;
     align-items: center;
@@ -277,6 +285,16 @@ body {
 
 
 /* Contact me Section */
+#contact {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#contact h1 {
+    font-size: 3rem;
+    color: #d875ad;
+    margin-bottom: 2rem;
+}
 .form {
     display: flex;
     width: 80%;

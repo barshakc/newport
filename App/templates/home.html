@@ -25,8 +25,9 @@
                 <li><a href="#home" class="t-white roboto">Home <i class="fa-solid fa-house"></i></a></li>
                 <li><a href="#about" class="t-white roboto">About Me <i class="fa-solid fa-user"></i></a></li>
                 <li><a href="#skills" class="t-white roboto">Skills <i class="fa-solid fa-code"></i></a></li>
-                <li><a href="#Projects" class="t-white roboto">Projects <i class="fas fa-project-diagram"></i></a></li>
-                <li><a href="#Contact" class="t-white roboto">Contact <i class="fa-solid fa-rocket"></i></a></li>
+                <li><a href="#Projects" class="t-white roboto">Projects <i class="fa-solid fa-laptop-code"></i></a></li>
+                <li><a href="https://barshakc.hashnode.dev" class="t-white roboto">Blogs <i class="fa-solid fa-blog"></i></a></li>
+                <li><a href="#Contact" class="t-white roboto">Contact <i class="fa-solid fa-comments"></i></a></li>
             </ul>
         </div>
     </nav>
@@ -44,8 +45,8 @@
     <a href="{% static 'pdf/cvbarsha.pdf' %}" target="_blank">
         <button class="btn poppins">Resume</button>
     </a>
-    <a class="btn live poppins" id="hireme" href="#contact" target="_blank">
-        Contact Me
+    <a class="btn live poppins" id="hireme" href="#Contact" target="_blank">
+       Connect with me
     </a>
 </div>
 
@@ -119,13 +120,13 @@
 </section>
 
    <!-- Projects Section -->
-<section id="Projects">
+<section id="projects">
     <h1 class="t-center my-2 t-white f-2">Projects</h1>
     <div class="projects-container flex s-center f-wrap">
 
         <!-- Nepali Sign Language Recognition -->
         <div class="projects-item flex f-col s-center items-center">
-            <h1 class="t-white poppins">Nepali Sign Language Recognition System</h1>
+            <h2 class="t-white poppins">Nepali Sign Language Recognition System</h1>
             <p class="t-white poppins">
                 Developed a real-time Nepali Sign Language recognition system using YOLOv8. Contributed to data preprocessing, model training, and testing to ensure accurate gesture recognition.<br>
                 <br><span class="tools-used"><strong>Tools Used:</strong> Python, OpenCV</span>
@@ -134,7 +135,7 @@
 
         <!-- Obstacle Detection System -->
         <div class="projects-item flex f-col s-center items-center">
-            <h1 class="t-white poppins">Obstacle Detection System for Visually Impaired</h1>
+            <h2 class="t-white poppins">Obstacle Detection System for Visually Impaired</h1>
             <p class="t-white poppins">
                 Designed and implemented a real-time obstacle detection system using YOLOv3 to assist visually impaired individuals. Collected and annotated datasets, fine-tuned YOLO parameters, and tested under varying lighting conditions.<br>
           <br><span class="tools-used"><strong>Tools Used:</strong> YOLO, Python, OpenCV</span>
@@ -143,7 +144,7 @@
 
         <!-- Annapurna Travel Website -->
         <div class="projects-item flex f-col s-center items-center">
-            <h1 class="t-white poppins">Annapurna Travel Website</h1>
+            <h2 class="t-white poppins">Annapurna Travel Website</h1>
             <p class="t-white poppins">
                 Developed backend components for a tourism website promoting travel in the Annapurna region. Used Git for version control and performed cross-browser testing for deployment readiness.<br>
               <br><span class="tools-used"><strong>Tools Used:</strong> Django, Python</span>
@@ -154,9 +155,9 @@
 </section>
 
     <!-- Contact Me Section -->
-    <section id="Contact" class="m-b-1">
-        <h1 class=" t-center my-2 t-white f-2">Contact Me</h1>
-        <div class="contact-container flex s-around items-centers">
+    <section id="contact">
+    <h1 class="t-center my-2 t-white f-2">Contact Me</h1>
+       <div class="skills-container flex s-around">
             <div class="form" id="contactForm">
                 <form method="post" > 
                     {% csrf_token %}
@@ -186,26 +187,17 @@
 
      <!-- Footer Section -->
     <footer id="footer">
-        <ul class="flex s-center w-80 m-auto my-2 res">
-            <li><a href="#home" class="poppinss">Home</a></li>
-            <li><a href="#about" class="poppinss">About</a></li>
-            <li><a href="#skills" class="poppinss">Skills</a></li>
-            <li><a href="#projects" class="poppinss">Projects</a></li>
-            <li><a href="#portfolio" class="poppinss">Portfolio</a></li>
-        </ul>
+        
         <ul class="flex s-center w-80 font-awesome ">
-            <a href="" target="_blank">
+            <a href="https://www.linkedin.com/in/barsha-kc-khatri/" target="_blank">
                 <li><i class="fa-brands fa-linkedin-in"></i></li>
             </a>
-            <a href="" target="_blank">
+            <a href="https://github.com/barshakc" target="_blank">
                 <li><i class="fa-brands fa-github"></i></li>
-            </a>
-                <a href="" target="_blank">
-                    <li><i class="fa-brands fa-instagram"></i></li>
-            </a>
+           
             
         </ul>
-        <p class="t-center my-2 poppins">&copy; All Rights Reserved - <span class="cpy-white poppins">Error By Night 
+        <p class="t-center my-2 poppins">&copy;  Barsha K.C. Khatri. All rights reserved.
                 </span></p>
 
     </footer>

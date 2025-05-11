@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@500&family=Ubuntu:wght@300;500;700&display=swap');
 
 body {
-    background-color: #1f1f38;
+    background-color: white;
 }
 
 * {
@@ -58,8 +58,10 @@ body {
 
 
 /* Home Section */
+/* Home Section */
+/* Home Section */
 #home {
-    height: 100vh; /* full screen height */
+    height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -71,51 +73,22 @@ body {
     padding: 0 2rem;
 }
 
-.home-left h6 {
-    font-size: 2rem;
-    color: rgb(216, 117, 173);
-    margin: 0.2rem 0;
-}
-
-.home-left h1 {
-    font-size: 4rem;
-    margin: 0.5rem 0;
-    color: #fff;
-}
-
-.home-left h4 {
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: rgb(216, 117, 173);
-    margin-top: 1rem;
-}
-.btn-group {
-    margin-top: 2rem; /* adjust spacing as needed */
-    display: flex;
-    gap: 1rem;
-}
-
+/* Home-right Section */
 .home-right {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
-.home-right img {
-    position: absolute;
-    width: 170%;
-    left: 40px;
-    top: -50px;
-    background-size: cover;
-    border-radius: 84%;
-    height: 150%;
+.profile-image {
+    width: 100%;  /* Ensures image takes the full width of the container */
+    height: auto; /* Keeps the image's aspect ratio intact */
+    max-width: 400px; /* Optional: controls the size of the image */
+    object-fit: cover; /* Ensures image covers the area without stretching */
 }
 
-.circle {
-    width: 17rem;
-    height: 17rem;
-    border-radius: 50%;
-    padding: 0.5rem;
-    position: relative;
-}
+
 
 /* About Section Styling */
 #about {
@@ -286,6 +259,7 @@ body {
 
 /* Contact me Section */
 #contact {
+
     padding: 4rem 2rem;
     text-align: center;
 }

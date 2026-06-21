@@ -132,6 +132,30 @@
     </div>
 </section>
 
+<!-- Contact Section -->
+<section id="contact">
+    <h1 class="t-center my-2 t-white f-2">Contact Me</h1>
+    <div class="form">
+        <form action="" method="post" class="form-area">
+            {% csrf_token %}
+            <div class="form-div">
+                {% if messages %}
+                    <div class="message-block">
+                        {% for message in messages %}
+                            <div class="message {{ message.tags }}">{{ message }}</div>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+                <input type="text" name="name" placeholder="Your Name" value="{{ form_data.name|default:'' }}" required>
+                <input type="email" name="email" placeholder="Your Email" value="{{ form_data.email|default:'' }}" required>
+                <input type="tel" name="number" placeholder="Your Phone" value="{{ form_data.number|default:'' }}" required>
+                <textarea name="content" placeholder="Your Message" rows="6" required>{{ form_data.content|default:'' }}</textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </div>
+        </form>
+    </div>
+</section>
+
 <!-- Footer -->
 <footer id="footer">
     <ul class="flex s-center w-80 font-awesome">

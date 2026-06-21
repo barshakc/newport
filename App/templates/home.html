@@ -7,61 +7,53 @@
     <title>Barsha KC Khatri</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <!-- Stylesheets -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
 </head>
 <body>
 
-<!-- Navbar -->
-<nav id="navbar" class="flex s-between bg-color modern-navbar">
-    <div class="left-nav">
-        <h2 class="t-white poppins">Barsha KC Khatri</h2>
+<nav id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+        <h2>Barsha KC Khatri</h2>
+        <button id="sidebarToggle" class="sidebar-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
     </div>
-    <div class="right-nav">
-        <ul class="flex">
-            <li><a href="#home" class="nav-link">Home</a></li>
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#skills" class="nav-link">Skills</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="https://barshakc.hashnode.dev" class="nav-link">Blogs</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-    </div>
+    <ul class="sidebar-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="https://barshakc.hashnode.dev" class="nav-link">Blog</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
 </nav>
 
-<!-- Home Section -->
-<section id="home" class="flex s-around sw-80 m-auto">
-    <div class="home-left flex items-center">
+<section id="home" class="flex s-center items-center">
+    <div class="home-left flex f-col s-center items-center">
         <div class="home-content">
-            <h6 class="poppinss">Hi !</h6>
-            <h6 class="poppinss">I'm</h6>
+            <h6>Hi there,</h6>
             <h1 class="t-white">Barsha KC Khatri</h1>
-            <h4 class="poppinss">Electronics, Communication and Information Engineer</h4>
+            <h4>Electronics, Communication & Information Engineer</h4>
+            <p class="subtitle">Building scalable systems and solving problems with code.</p>
 
             <div class="btn-group">
                 <a href="{% static 'pdf/cvbarsha.pdf' %}" target="_blank">
-                    <button class="btn poppins">Resume</button>
+                    <button class="btn">View Resume</button>
                 </a>
-                <a class="btn live poppins" href="#footer">Connect with me</a>
+                <a class="btn live" href="#contact">Get in Touch</a>
             </div>
-        </div>
-    </div>
-    <div class="home-right flex s-center items-center">
-        <div class="circle flex s-center items-center" id="mainImage">
-            <img src="{% static 'images/mypic.jpg' %}" alt="Barsha KC">
         </div>
     </div>
 </section>
 
-<!-- About Section -->
 <section id="about">
-    <h1 class="t-center my-2 t-white f-2">About Me</h1>
+    <h1>About Me</h1>
     <div class="about-container flex s-center">
         <div class="about-left">
             <div class="about-content">
-                <h2 class="t-white m-b-1 poppins">Hi, I'm Barsha KC Khatri</h2>
+                <h2>Hi, I'm Barsha KC Khatri</h2>
                 <p class="intro-text">
                     A recent graduate in Electronics, Communication and Information Engineering, with a passion for technology-driven problem-solving.
                 </p>
@@ -75,16 +67,15 @@
         </div>
     </div>
     <div class="cta-container flex s-center">
-        <a class="btn" href="#footer">Hire Me</a>
+        <a class="btn" href="#contact">Get In Touch</a>
     </div>
 </section>
 
-<!-- Skills Section -->
 <section id="skills">
-    <h1 class="t-center my-2 t-white f-2">Skills</h1>
+    <h1>Skills</h1>
     <div class="skills-container flex s-center">
         <div class="skills-box">
-            <h2 class="t-white">Technical Skills</h2>
+            <h2>Technical Skills</h2>
             <ul class="skills-list">
                 <li><strong>Programming Languages:</strong> Python, C, C++</li>
                 <li><strong>Backend Development:</strong> Django, REST APIs</li>
@@ -97,33 +88,29 @@
     </div>
 </section>
 
-<!-- Projects Section -->
 <section id="projects">
-    <h1 class="t-center my-2 t-white f-2">Projects</h1>
+    <h1>Projects</h1>
     <div class="projects-container flex s-center f-wrap">
 
-        <!-- NSL Recognition -->
         <div class="projects-item flex f-col s-center items-center">
-            <h2 class="t-white poppins">Nepali Sign Language Recognition System</h2>
-            <p class="t-white poppins">
+            <h2>Nepali Sign Language Recognition System</h2>
+            <p>
                 Developed a real-time Nepali Sign Language recognition system using YOLOv8. Contributed to data preprocessing, model training, and testing to ensure accurate gesture recognition.
                 <br><span class="tools-used"><strong>Tools Used:</strong> Python, OpenCV</span>
             </p>
         </div>
 
-        <!-- Obstacle Detection -->
         <div class="projects-item flex f-col s-center items-center">
-            <h2 class="t-white poppins">Obstacle Detection System for Visually Impaired</h2>
-            <p class="t-white poppins">
+            <h2>Obstacle Detection System for Visually Impaired</h2>
+            <p>
                 Designed and implemented a real-time obstacle detection system using YOLOv3. Collected and annotated datasets, fine-tuned YOLO parameters, and tested under varying lighting conditions.
                 <br><span class="tools-used"><strong>Tools Used:</strong> YOLO, Python, OpenCV</span>
             </p>
         </div>
 
-        <!-- Travel Website -->
         <div class="projects-item flex f-col s-center items-center">
-            <h2 class="t-white poppins">Annapurna Travel Website</h2>
-            <p class="t-white poppins">
+            <h2>Annapurna Travel Website</h2>
+            <p>
                 Developed backend components for a tourism website promoting travel in the Annapurna region. Used Git for version control and performed cross-browser testing for deployment readiness.
                 <br><span class="tools-used"><strong>Tools Used:</strong> Django, Python</span>
             </p>
@@ -132,32 +119,8 @@
     </div>
 </section>
 
-<!-- Contact Section -->
-<section id="contact">
-    <h1 class="t-center my-2 t-white f-2">Contact Me</h1>
-    <div class="form">
-        <form action="" method="post" class="form-area">
-            {% csrf_token %}
-            <div class="form-div">
-                {% if messages %}
-                    <div class="message-block">
-                        {% for message in messages %}
-                            <div class="message {{ message.tags }}">{{ message }}</div>
-                        {% endfor %}
-                    </div>
-                {% endif %}
-                <input type="text" name="name" placeholder="Your Name" value="{{ form_data.name|default:'' }}" required>
-                <input type="email" name="email" placeholder="Your Email" value="{{ form_data.email|default:'' }}" required>
-                <input type="tel" name="number" placeholder="Your Phone" value="{{ form_data.number|default:'' }}" required>
-                <textarea name="content" placeholder="Your Message" rows="6" required>{{ form_data.content|default:'' }}</textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </div>
-        </form>
-    </div>
-</section>
 
-<!-- Footer -->
-<footer id="footer">
+<footer id="contact">
     <ul class="flex s-center w-80 font-awesome">
         <li><a href="https://www.linkedin.com/in/barsha-kc-khatri/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
         <li><a href="https://github.com/barshakc" target="_blank"><i class="fa-brands fa-github"></i></a></li>
@@ -165,7 +128,6 @@
     <p class="t-center my-2 poppins">&copy; Barsha K.C. Khatri. All rights reserved.</p>
 </footer>
 
-<!-- Scripts -->
 <script src="{% static 'js/main.js' %}"></script>
 
 </body>

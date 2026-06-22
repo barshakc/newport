@@ -1,51 +1,86 @@
-const sidebarToggle = document.getElementById('sidebarToggle');
-const sidebar = document.getElementById('sidebar');
-const body = document.body;
+console.log("main.js loaded");
+document.addEventListener("DOMContentLoaded", function () {
 
-if (window.innerWidth <= 768) {
-    sidebar.classList.add('closed');
-    body.classList.remove('sidebar-open');
-}
+    const sidebarToggle = document.getElementById('sidebarToggle');
+    const sidebar = document.getElementById('sidebar');
+    const body = document.body;
 
-function toggleSidebar() {
-    sidebar.classList.toggle('closed');
-    body.classList.toggle('sidebar-open');
-}
-
-function closeSidebar() {
-    sidebar.classList.add('closed');
-    body.classList.remove('sidebar-open');
-}
-
-if (sidebarToggle) {
-    sidebarToggle.addEventListener('click', toggleSidebar);
-}
-
-window.addEventListener('resize', function() {
-    if (window.innerWidth > 768) {
-        sidebar.classList.remove('closed');
+    if (window.innerWidth <= 768) {
+        sidebar?.classList.add('closed');
         body.classList.remove('sidebar-open');
     }
-});
 
-document.querySelectorAll('.sidebar-menu a.nav-link[href^="#"]').forEach(link => {
-    link.addEventListener('click', function(e) {
-        closeSidebar();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            e.preventDefault();
-            setTimeout(() => {
-                target.scrollIntoView({ behavior: 'smooth' });
-            }, 300);
+    function toggleSidebar() {
+        sidebar?.classList.toggle('closed');
+        body.classList.toggle('sidebar-open');
+    }
+
+    function closeSidebar() {
+        sidebar?.classList.add('closed');
+        body.classList.remove('sidebar-open');
+    }
+
+    if (sidebarToggle) {
+        sidebarToggle.addEventListener('click', toggleSidebar);
+    }
+
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+            sidebar?.classList.remove('closed');
+            body.classList.remove('sidebar-open');
         }
     });
-});
 
-document.addEventListener('click', function(e) {
-    if (e.target === document.body && window.innerWidth <= 768) {
-        if (!sidebar.contains(e.target) && !sidebarToggle.contains(e.target)) {
+    document.querySelectorAll('.sidebar-menu a.nav-link[href^="#"]').forEach(link => {
+        link.addEventListener('click', function(e) {
             closeSidebar();
-        }
-    }
-});
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                e.preventDefault();
+                setTimeout(() => {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }, 300);
+            }
+        });
+    });
 
+    const roles = [
+        "Electronics, Communication and Information Engineer",
+        "Backend Developer",
+        "Data and Machine Learning Enthusiast"
+    ];
+
+    let i = 0;
+    let j = 0;
+    let currentText = "";
+    let isDeleting = false;
+
+    function typeEffect() {
+        const element = document.getElementById("typewriter");
+        if (!element) return;
+
+        if (!isDeleting && j <= roles[i].length) {
+            currentText = roles[i].substring(0, j++);
+        } else if (isDeleting && j >= 0) {
+            currentText = roles[i].substring(0, j--);
+        }
+
+        element.textContent = currentText;
+
+        let speed = isDeleting ? 50 : 100;
+
+        if (!isDeleting && j === roles[i].length) {
+            speed = 1200;
+            isDeleting = true;
+        } else if (isDeleting && j === 0) {
+            isDeleting = false;
+            i = (i + 1) % roles.length;
+            speed = 300;
+        }
+
+        setTimeout(typeEffect, speed);
+    }
+
+    typeEffect();
+
+});

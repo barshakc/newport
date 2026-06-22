@@ -621,7 +621,7 @@ h1, h2, h3 {
   #sidebar {
     position: fixed;
     top: 0;
-    left: -100%;  
+    left: -100%;
     width: 70%;
     height: 100vh;
     margin: 0;
@@ -652,49 +652,6 @@ h1, h2, h3 {
     border: none;
     padding: 10px 14px;
     border-radius: 8px;
-  }
-
-  section {
-    width: 95%;
-    max-width: 100%;
-    margin: 20px auto;
-    padding: 20px;
-  }
-
-  #typewriter {
-    min-width: unset;
-    width: auto;
-  }
-
-  .skills-container,
-  .projects-container {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-
-  h1 {
-    font-size: 28px;
-  }
-
-  p {
-    font-size: 14px;
-  }
-
-  .btn {
-    width: auto;
-    padding: 10px 16px;
-  }
-
-  .btn-group {
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .about-content {
-    text-align: left;
-  }
-
-  #home {
-    margin-top: 40px;
   }
 
 }

@@ -14,6 +14,9 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+html, body {
+  overflow-x: hidden;
+}
 
 body {
   font-family: 'Inter', sans-serif;
@@ -145,7 +148,9 @@ section {
   display: flex;
   gap: 1rem;
   justify-content: center;
+  flex-wrap: wrap; 
 }
+
 
 
 .skills-container,
@@ -179,6 +184,10 @@ section {
   border-radius: 10px;
 }
 
+.subtitle, h4 {
+  overflow-wrap: break-word;
+}
+
 #footer {
   text-align: center;
   padding: 1.5rem;
@@ -191,17 +200,15 @@ section {
 }
 
 @media (max-width: 768px) {
-
+  #home{
+    padding-top: 60px;
+  }
   body {
     margin-left: 0;
   }
 
   #sidebar {
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin: 0;
-    border-radius: 0;
+    display:none;
   }
 
   .sidebar-menu {
@@ -211,18 +218,32 @@ section {
   }
 
   section {
-    margin: 20px auto;
-    padding: 30px 15px;
+  margin: 20px auto;
+  width: calc(100% - 30px);   
+  max-width: 1000px;
+  padding: 20px 15px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.12);
   }
+  
 
   #home {
     flex-direction: column;
   }
 
-  .btn-group {
+  
+ 
+.btn-group {
     flex-direction: column;
-    gap: 10px;
+    align-items: center; 
+}
+  .btn {
+    width: 85%;
   }
+
+
 
   h1 {
     font-size: 24px;

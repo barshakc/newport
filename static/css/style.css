@@ -308,11 +308,7 @@ section:hover {
 section {
   padding: 50px 20px;
 }
-.sidebar {
-  width: 250px;
-  position: fixed;
-  height: 100%;
-}
+
 
 
 #about h1, #skills h1, #projects h1, #research h1,#education h1 {

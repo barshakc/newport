@@ -176,21 +176,21 @@ section:hover {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 0.8rem; 
+    gap: 0.9rem; 
 }
 
 .home-left h6 {
     font-family: 'Inter', sans-serif;
     letter-spacing: 1.2px;
     text-transform: uppercase;
-    min-height:50px;
+    min-height:70px;
     font-size: 1rem;
     opacity: 0.85;
 
 }
 
 .home-left h1 {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.6rem;
 }
 
 .home-left h4 {
@@ -295,7 +295,7 @@ section:hover {
 }
 
 
-#about h1, #skills h1, #projects h1, #research h1 {
+#about h1, #skills h1, #projects h1, #research h1,#education h1 {
     margin-bottom: 1.5rem;
 }
 
@@ -314,6 +314,43 @@ section:hover {
     font-size: 0.95rem;
     line-height: 1.7;
     margin-bottom: 1rem;
+}
+#education {
+    padding:4rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.education-content {
+    max-width: 650px;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.05);   
+    backdrop-filter: blur(8px);
+
+    border: 1px solid rgba(255,255,255,0.08);  
+}
+
+.education-content h3 {
+    margin-bottom: 0.5rem;
+}
+
+.education-content p {
+    margin: 0.3rem 0;
+}
+
+.edu-year {
+    opacity: 0.75;
+    font-size: 0.95rem;
+}
+.education-content:hover {
+    transform: translateY(-3px);
+    transition: 0.3s ease;
 }
 
 
@@ -361,7 +398,7 @@ section:hover {
     color: var(--text-secondary);
 }
 
-.projects-container {
+.projects-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
@@ -385,7 +422,7 @@ section:hover {
     color: #7cc9ff;
 }
 
-.project-card p {
+.project-card p{
     font-size: 1rem;
     line-height: 1.6;
     color: rgba(255,255,255,0.85);
@@ -410,7 +447,7 @@ section:hover {
     text-decoration: underline;
 }
 
-.project-card:hover {
+.project-card:hover, .education-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 30px rgba(0,0,0,0.6);
     border-color: rgba(90,184,255,0.4);

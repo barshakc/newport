@@ -46,8 +46,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const roles = [
         "Electronics, Communication and Information Engineer",
-        "Backend Developer",
-        "Data and Machine Learning Enthusiast"
+        "Backend Engineer",
+        "AI and Machine Learning Enthusiast"
     ];
 
     let i = 0;

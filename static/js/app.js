@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
   const sidebarToggle = document.getElementById("sidebarToggle");
+  const sidebar = document.getElementById("sidebar");
   const body = document.body;
 
   function toggleSidebar(e) {
-    e.stopPropagation();
+    if (e) e.stopPropagation();
     body.classList.toggle("sidebar-open");
   }
 
@@ -22,25 +23,22 @@ document.addEventListener("DOMContentLoaded", function () {
       const target = document.querySelector(this.getAttribute("href"));
       if (target) {
         e.preventDefault();
-        setTimeout(() => {
-          target.scrollIntoView({ behavior: "smooth" });
-        }, 200);
+        target.scrollIntoView({ behavior: "smooth" });
       }
     });
   });
 
   document.addEventListener("click", function (e) {
-    const sidebar = document.getElementById("sidebar");
-
     if (
-      document.body.classList.contains("sidebar-open") &&
+      body.classList.contains("sidebar-open") &&
       !sidebar.contains(e.target) &&
       !e.target.closest("#sidebarToggle")
     ) {
-      document.body.classList.remove("sidebar-open");
+      closeSidebar();
     }
   });
 
+  // Typewriter
   const roles = [
     "Electronics, Communication and Information Engineer",
     "Backend Engineer",

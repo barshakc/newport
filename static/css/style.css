@@ -532,38 +532,52 @@ h1, h2, h3 {
     line-height: 1.2;
 }
 
-.menu-toggle {
-    display: none;
+.menu-toggle {.menu-toggle none;   /* ✅ hides on desktop */
     position: fixed;
     top: 16px;
     left: 16px;
     z-index: 1100;
+
+    width: 40px;
+    height: 36px;
+
     background: rgba(15, 23, 42, 0.9);
-    color: #f4f4f4;
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255,255,255,0.15);
     border-radius: 8px;
-    padding: 8px 13px;
-    font-size: 1.3rem;
+
     cursor: pointer;
+
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+
+    padding: 6px;
 }
 
-body.sidebar-open::after {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: 100% !important;
-    border-radius: 0 !important;
-    filter: none !important;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 900;
+.menu-toggle span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+
+    border-radius: 2px;
+    transition: all 0.3s ease;
 }
 
-body.sidebar-open {
-    overflow: hidden;
+.menu-toggle span {.menu transition: transform 0.3s ease, opacity 0.2s ease;
 }
 
+body.sidebar-open .menu-toggle span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+body.sidebar-open .menu-toggle span:nth-child(2) {
+    opacity: 0;
+}
+
+body.sidebar-open .menu-toggle span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
 
 @media (max-width: 768px) {
     body {
@@ -571,7 +585,7 @@ body.sidebar-open {
     }
 
     .menu-toggle {
-        display: block;
+        display: flex;
     }
 
     #sidebar {

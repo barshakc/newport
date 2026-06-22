@@ -13,7 +13,12 @@
     />
   </head>
   <body>
-    <button id="sidebarToggle" class="menu-toggle">☰</button>
+    <button id="sidebarToggle" class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
     <nav id="sidebar" class="sidebar">
       <div class="sidebar-header">
         <h2>Barsha KC Khatri</h2>
@@ -48,10 +53,7 @@
           </p>
 
           <div class="btn-group">
-            <a
-              href="pdf/Barsha KC Khatri CV.pdf"
-              target="_blank"
-            >
+            <a href="pdf/Barsha KC Khatri CV.pdf" target="_blank">
               <button class="btn">View Resume</button>
             </a>
 
@@ -67,12 +69,15 @@
         <div class="about-left">
           <div class="about-content">
             <p class="intro-text">
-              I am an Electronics, Communication and Information Engineer with a focus on backend systems, data engineering,
-              and AI-driven applications.
+              I am an Electronics, Communication and Information Engineer with a
+              focus on backend systems, data engineering, and AI-driven
+              applications.
             </p>
- 
+
             <p class="about-text">
-              I have an experience in building full-stack applications, data pipelines, and scalable systems, with work in computer vision (YOLO) and assistive technology research.
+              I have an experience in building full-stack applications, data
+              pipelines, and scalable systems, with work in computer vision
+              (YOLO) and assistive technology research.
             </p>
 
             <p class="about-text">
@@ -84,55 +89,54 @@
         </div>
       </div>
     </section>
-    
-    <section id="education">
-    <h1>Education</h1>
 
-    <div class="education-content">
-        <h3>Bachelor’s in Electronics, Communication and Information Engineering</h3>
+    <section id="education">
+      <h1>Education</h1>
+
+      <div class="education-content">
+        <h3>
+          Bachelor’s in Electronics, Communication and Information Engineering
+        </h3>
         <p>Institute of Engineering, Pashchimanchal Campus</p>
         <p class="edu-year">2021 – 2025</p>
-    </div>
+      </div>
     </section>
 
     <section id="skills">
-  <h1>Skills</h1>
+      <h1>Skills</h1>
 
-  <div class="skills-container">
+      <div class="skills-container">
+        <div class="skill-card">
+          <h3>Programming</h3>
+          <p>C • C++ • Python</p>
+        </div>
 
-    <div class="skill-card">
-      <h3>Programming</h3>
-      <p>C • C++ • Python </p>
-    </div>
+        <div class="skill-card">
+          <h3>Frameworks & Libraries</h3>
+          <p>Django • FastAPI • Pandas • NumPy • Streamlit</p>
+        </div>
 
-    <div class="skill-card">
-      <h3>Frameworks & Libraries</h3>
-      <p>Django • FastAPI • Pandas • NumPy • Streamlit</p>
-    </div>
+        <div class="skill-card">
+          <h3>Backend & APIs</h3>
+          <p>REST APIs • Celery • Redis</p>
+        </div>
 
-    <div class="skill-card">
-      <h3>Backend & APIs</h3>
-      <p>REST APIs • Celery • Redis</p>
-    </div>
+        <div class="skill-card">
+          <h3>Machine Learning</h3>
+          <p>YOLO • OpenCV</p>
+        </div>
 
-    <div class="skill-card">
-      <h3>Machine Learning</h3>
-      <p>YOLO • OpenCV</p>
-    </div>
+        <div class="skill-card">
+          <h3>Databases</h3>
+          <p>PostgreSQL • MySQL</p>
+        </div>
 
-    <div class="skill-card">
-      <h3>Databases</h3>
-      <p>PostgreSQL • MySQL</p>
-    </div>
-
-    <div class="skill-card">
-      <h3>Tools & Others</h3>
-      <p>Git • Docker • Power BI</p>
-    </div>
-
-  </div>
-</section>
-
+        <div class="skill-card">
+          <h3>Tools & Others</h3>
+          <p>Git • Docker • Power BI</p>
+        </div>
+      </div>
+    </section>
 
     <section id="projects">
       <h1>Projects</h1>
@@ -141,11 +145,10 @@
         <div class="project-card">
           <h3>Obstacle Detection System</h3>
           <p>
-            AI + IoT system for real-time obstacle detection with audio and haptic feedback.
+            AI + IoT system for real-time obstacle detection with audio and
+            haptic feedback.
           </p>
-          <p class="tools">
-            Python, OpenCV, YOLOv3, Raspberry Pi
-          </p>
+          <p class="tools">Python, OpenCV, YOLOv3, Raspberry Pi</p>
           <a
             href="https://conference.ioe.edu.np/publications/ioegc16/IOEGC-16-266-PS2-03.pdf"
             target="_blank"
@@ -157,7 +160,8 @@
         <div class="project-card">
           <h3>Finance Tracker</h3>
           <p>
-           Full-stack system for tracking transactions, budgets, and financial analytics.
+            Full-stack system for tracking transactions, budgets, and financial
+            analytics.
           </p>
           <p class="tools">
             Django, DRF, React, PostgreSQL, Docker, Nginx, Chart.js
@@ -173,11 +177,10 @@
         <div class="project-card">
           <h3>Task Scheduler</h3>
           <p>
-            Backend system for scheduling and managing tasks with real-time monitoring.
+            Backend system for scheduling and managing tasks with real-time
+            monitoring.
           </p>
-          <p class="tools">
-            FastAPI, Celery, Streamlit, Docker
-          </p>
+          <p class="tools">FastAPI, Celery, Streamlit, Docker</p>
           <a
             href="https://github.com/barshakc/Task-Scheduler"
             target="_blank"
@@ -189,7 +192,8 @@
         <div class="project-card">
           <h3>YouTube Data Analytics</h3>
           <p>
-            Automated data pipeline and dashboard for analyzing video performance.
+            Automated data pipeline and dashboard for analyzing video
+            performance.
           </p>
           <p class="tools">Python, Airflow, PostgreSQL, DRF, Power BI</p>
           <a
@@ -202,9 +206,7 @@
 
         <div class="project-card">
           <h3>Nepali Sign Language Recognition</h3>
-          <p>
-            Developed a real-time sign language recognition using YOLOv8. 
-          </p>
+          <p>Developed a real-time sign language recognition using YOLOv8.</p>
           <p class="tools">Python, OpenCV, ML</p>
           <a href="#" target="_blank" class="project-link">Link</a>
         </div>
@@ -219,9 +221,9 @@
           <h3>Obstacle Detection for Visually Impaired</h3>
           <p class="publication">IOE Graduate Conference (IOEGC-16), 2025</p>
           <p>
-            A real-time obstacle detection system using YOLOv3 and
-            Raspberry Pi to assist visually impaired individuals with navigation
-            through audio and haptic feedback.
+            A real-time obstacle detection system using YOLOv3 and Raspberry Pi
+            to assist visually impaired individuals with navigation through
+            audio and haptic feedback.
           </p>
           <a
             href="https://conference.ioe.edu.np/publications/ioegc16/IOEGC-16-266-PS2-03.pdf"
@@ -239,8 +241,8 @@
             Abstract No: 20P-MAC-ORAL-051 | Oral Presentation | p.
           </p>
           <p>
-            A computer vision-based system for recognizing Nepali sign
-            language gestures using YOLO models.
+            A computer vision-based system for recognizing Nepali sign language
+            gestures using YOLO models.
           </p>
           <a
             href="https://drive.google.com/file/d/12Fbqu7wbd39QSV-VLtkGaTLTl-LRvzXY/view?usp=sharing"
@@ -271,7 +273,5 @@
         <p>&copy; Barsha K.C. Khatri. All rights reserved.</p>
       </div>
     </footer>
-
-
   </body>
 </html>

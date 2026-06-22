@@ -305,15 +305,6 @@ section:hover {
   text-align: center;
 }
 
-@media (max-width: 768px) {
-  #home {
-    flex-direction: column;
-  }
-
-  .home-content h1 {
-    font-size: 28px;
-  }
-}
 section {
   padding: 50px 20px;
 }
@@ -321,24 +312,6 @@ section {
   width: 250px;
   position: fixed;
   height: 100%;
-}
-
-@media (max-width: 768px) {
-  .sidebar {
-    position: relative;
-    width: 100%;
-    height: auto;
-  }
-
-  .sidebar-menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .sidebar-menu li {
-    margin: 5px 10px;
-  }
 }
 
 

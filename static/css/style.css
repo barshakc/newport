@@ -590,6 +590,9 @@ body.sidebar-open::after {
   background: rgba(0,0,0,0.5);
   z-index: 900;
 }
+body.sidebar-open {
+  overflow: hidden;
+}
 
 @media (max-width: 768px) {
 
@@ -600,23 +603,28 @@ body.sidebar-open::after {
   #sidebar {
     position: fixed;
     top: 0;
-    left: -100% !important;
-    width: 70%;
+
+    left: -100vw !important;   
+    width: 260px;            
     height: 100vh;
-    margin: 0 !important;
+
+    margin: 0 !important;    
+    padding: 2rem 1rem;
+
     border-radius: 0;
     background: rgba(15, 23, 42, 0.95);
-    transition: left 0.3s ease;
+
+    transition: transform 0.3s ease, left 0.3s ease;
     z-index: 1000;
   }
 
   body.sidebar-open #sidebar {
-    left: 0;
+    left: 0 !important;
   }
 
   .sidebar-menu {
     flex-direction: column;
-    padding: 1rem;
+    padding: 0;
   }
 
   .menu-toggle {

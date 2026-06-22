@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Barsha KC Khatri</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="/static/js/main.js"></script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav id="sidebar" class="sidebar">
+      <div class="sidebar-header">
+        <h2>Barsha KC Khatri</h2>
+      </div>
+      <ul class="sidebar-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li>
+          <a href="https://barshakc.hashnode.dev" class="nav-link">Blog</a>
+        </li>
+        <li><a href="#research" class="nav-link">Publications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="home" class="flex s-center items-center">
+      <div class="home-left flex f-col s-center items-center">
+        <div class="home-content">
+          <h6>Hi there, I'm</h6>
+
+          <h1 class="t-white">Barsha KC Khatri</h1>
+
+          <h4>
+            <span id="typewriter"></span>
+          </h4>
+
+          <p class="subtitle">
+            Building scalable systems, data-driven solutions, and AI-powered
+            applications.
+          </p>
+
+          <div class="btn-group">
+            <a
+              href="{% static 'pdf/Barsha KC Khatri CV.pdf' %}"
+              target="_blank"
+            >
+              <button class="btn">View Resume</button>
+            </a>
+
+            <a class="btn secondary" href="#contact"> Get in Touch </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h1>About Me</h1>
+      <div class="about-container flex s-center">
+        <div class="about-left">
+          <div class="about-content">
+            <p class="intro-text">
+              I am an Electronics, Communication and Information Engineering
+              graduate with a strong focus on backend systems, data engineering,
+              and AI-driven applications.
+            </p>
+
+            <p class="about-text">
+              I have an experience building full-stack applications, designing
+              data pipelines, and developing scalable backend systems using
+              technologies like Django, FastAPI, PostgreSQL, and Docker.
+            </p>
+
+            <p class="about-text">
+              My work also includes developing real-time computer vision systems
+              using YOLO models and contributing to research in assistive
+              technologies.
+            </p>
+
+            <p class="about-text">
+              I enjoy solving real-world problems by combining software
+              engineering, data analysis, and machine learning to create
+              practical and impactful solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="cta-container flex s-center">
+        <a class="btn" href="#contact">Get In Touch</a>
+      </div>
+    </section>
+    
+
+    <section id="education">
+    <h1>Education</h1>
+
+    <div class="education-content">
+        <h3>Bachelor’s in Electronics, Communication and Information Engineering</h3>
+        <p>Institute of Engineering, Pashchimanchal Campus</p>
+        <p class="edu-year">2021 – 2025</p>
+    </div>
+</section>
+</section>
+
+    </div>
+</section>
+
+    <section id="skills">
+      <h1>Skills</h1>
+
+      <div class="skills-container">
+        <div class="skill-card">
+          <h3>Programming</h3>
+          <p>Python, C, C++</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Backend</h3>
+          <p>Django, REST APIs</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Libraries</h3>
+          <p>Pandas, NumPy, Matplotlib, Seaborn</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Machine Learning</h3>
+          <p>YOLO, OpenCV</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Database</h3>
+          <p>SQL</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Tools</h3>
+          <p>Git, GitHub</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h1>Projects</h1>
+
+      <div class="projects-container">
+        <div class="project-card">
+          <h3>Obstacle Detection System</h3>
+          <p>
+            An assistive system using computer vision and IoT to detect
+            real-time obstacles and provide audio and haptic feedback, enhancing
+            safety and mobility for visually impaired users.
+          </p>
+          <p class="tools">
+            Python, OpenCV, YOLOv3, Raspberry Pi, IoT, Computer Vision
+          </p>
+          <a
+            href="https://conference.ioe.edu.np/publications/ioegc16/IOEGC-16-266-PS2-03.pdf"
+            target="_blank"
+            class="project-link"
+            >Paper ↗</a
+          >
+        </div>
+
+        <div class="project-card">
+          <h3>Finance Tracker</h3>
+          <p>
+            A Full-stack finance system with ETL pipeline, JWT authentication,
+            and real-time analytics dashboard for tracking transactions,
+            budgets, and financial KPIs.
+          </p>
+          <p class="tools">
+            Django, DRF, React, PostgreSQL, Docker, Nginx, Chart.js
+          </p>
+          <a
+            href="https://github.com/barshakc/Finance-Tracker"
+            target="_blank"
+            class="project-link"
+            >GitHub ↗</a
+          >
+        </div>
+
+        <div class="project-card">
+          <h3>Task Scheduler</h3>
+          <p>
+            A task scheduling system with cron-based and interval jobs,
+            featuring Celery workers, JWT authentication, and a Streamlit
+            dashboard for real-time task monitoring.
+          </p>
+          <p class="tools">
+            FastAPI, Celery, PostgreSQL, Streamlit, Docker, JWT
+          </p>
+          <a
+            href="https://github.com/barshakc/Task-Scheduler"
+            target="_blank"
+            class="project-link"
+            >GitHub ↗</a
+          >
+        </div>
+
+        <div class="project-card">
+          <h3>YouTube Data Analytics</h3>
+          <p>
+            Developed an automated data pipeline and dashboard to analyze
+            YouTube videos, uncovering trends in engagement, channel
+            performance, and publishing behavior using real-time data workflows.
+          </p>
+          <p class="tools">Python, Airflow, PostgreSQL, DRF, Power BI</p>
+          <a
+            href="https://github.com/barshakc/Youtube-Data-Analytics"
+            target="_blank"
+            class="project-link"
+            >GitHub ↗</a
+          >
+        </div>
+
+        <div class="project-card">
+          <h3>Nepali Sign Language Recognition</h3>
+          <p>
+            Real-time sign language recognition using YOLOv8. Included dataset
+            preprocessing, model training, and evaluation.
+          </p>
+          <p class="tools">Python, OpenCV, ML</p>
+          <a href="#" target="_blank" class="project-link">Link</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="research">
+      <h1>Research & Publications</h1>
+
+      <div class="research-container">
+        <div class="research-card">
+          <h3>Obstacle Detection for Visually Impaired</h3>
+          <p class="publication">IOE Graduate Conference (IOEGC-16), 2025</p>
+          <p>
+            Developed a real-time obstacle detection system using YOLOv3 and
+            Raspberry Pi to assist visually impaired individuals with navigation
+            through audio and haptic feedback.
+          </p>
+          <a
+            href="https://conference.ioe.edu.np/publications/ioegc16/IOEGC-16-266-PS2-03.pdf"
+            target="_blank"
+            class="project-link"
+          >
+            Research Paper ↗
+          </a>
+        </div>
+
+        <div class="research-card">
+          <h3>Nepali Sign Language Recognition</h3>
+          <p class="publication">
+            RTSTI Conference, 2025 (Conference Abstract)<br />
+            Abstract No: 20P-MAC-ORAL-051 | Oral Presentation | p.
+          </p>
+          <p>
+            Developed a computer vision-based system for recognizing Nepali sign
+            language gestures using YOLO models; work presented and published as
+            a conference abstract.
+          </p>
+          <a
+            href="https://drive.google.com/file/d/12Fbqu7wbd39QSV-VLtkGaTLTl-LRvzXY/view?usp=sharing"
+            target="_blank"
+            class="project-link"
+          >
+            Abstract ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="footer-content">
+        <div class="social-icons">
+          <a
+            href="https://www.linkedin.com/in/barsha-kc-khatri/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+
+          <a href="https://github.com/barshakc" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+
+        <p>&copy; Barsha K.C. Khatri. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="{% static 'js/main.js' %}"></script>
+  </body>
+</html>

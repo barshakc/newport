@@ -619,11 +619,39 @@ h1, h2, h3 {
   }
 
   #sidebar {
-    position: relative;
-    width: 100%;
-    height: auto;
+    position: fixed;
+    top: 0;
+    left: -100%;  
+    width: 70%;
+    height: 100vh;
     margin: 0;
     border-radius: 0;
+    background: rgba(15, 23, 42, 0.95);
+    transition: left 0.3s ease;
+    z-index: 1000;
+  }
+
+  body.sidebar-open #sidebar {
+    left: 0;
+  }
+
+  .sidebar-menu {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1100;
+    font-size: 22px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 8px;
   }
 
   section {
@@ -651,7 +679,6 @@ h1, h2, h3 {
     font-size: 14px;
   }
 
-
   .btn {
     width: auto;
     padding: 10px 16px;
@@ -664,6 +691,10 @@ h1, h2, h3 {
 
   .about-content {
     text-align: left;
+  }
+
+  #home {
+    margin-top: 40px;
   }
 
 }

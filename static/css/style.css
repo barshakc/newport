@@ -575,7 +575,7 @@ body.sidebar-open {
     }
 
     #sidebar {
-        left: -280px !important;
+        transform: translateX(-100%);
         top: 0 !important;
         width: 260px !important;
         height: 100vh !important;
@@ -585,9 +585,11 @@ body.sidebar-open {
         background: rgba(15, 23, 42, 0.97) !important;
         overflow-y: auto !important;
         z-index: 1000;
+        transition: transform 0.3s ease;
+        will-change: transform;
     }
 
     body.sidebar-open #sidebar {
-        left: 0 !important;
-    }
+    transform: translateX(0);
+}
 }

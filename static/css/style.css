@@ -532,7 +532,9 @@ h1, h2, h3 {
     line-height: 1.2;
 }
 
-.menu-toggle {.menu-toggle none;   /* ✅ hides on desktop */
+.menu-toggle {
+    display: none; 
+
     position: fixed;
     top: 16px;
     left: 16px;
@@ -554,17 +556,19 @@ h1, h2, h3 {
     padding: 6px;
 }
 
+
 .menu-toggle span {
     display: block;
     height: 2px;
     width: 100%;
     background: #fff;
-
     border-radius: 2px;
-    transition: all 0.3s ease;
+
+    transition: transform 0.3s ease, opacity 0.2s ease;
 }
 
-.menu-toggle span {.menu transition: transform 0.3s ease, opacity 0.2s ease;
+.menu-toggle:active {
+    transform: scale(0.95);
 }
 
 body.sidebar-open .menu-toggle span:nth-child(1) {
